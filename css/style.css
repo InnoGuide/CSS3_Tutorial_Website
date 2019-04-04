@@ -1,0 +1,169 @@
+body{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(233, 233, 233)
+}
+
+/*---------------social----------------------------*/
+.social{
+    position: fixed;
+    top: 250px;
+    left: -290px;
+    line-height: 30px;
+    padding: 5px;
+    background: rgba(7, 23, 255, 0.5);
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: 0.5s
+}
+.noTextOpacity{
+    text-shadow: 2px 2px var(--ddgray);
+    font-weight: bold;
+    color:rgba(255, 255, 255,1);
+}
+.social i{
+    padding:5px;
+   color:rgba(255, 255, 255,1);
+}
+.sPic{
+    font-style: oblique;
+    padding-left:10px;
+}
+.social:hover{
+    left: 0px;
+}
+/*------------header---------------------------*/
+header{
+    background: url(../img/bg.jpg)  center no-repeat ;
+    background-size: cover;
+    height: 200px;
+    overflow: hidden;
+}
+
+header div{
+    font: bold 60px  'Times New Roman', Times, serif ;
+    text-align: center;
+    text-shadow: 5px 5px rgba(2, 4, 110, 0.212);
+    line-height: 200px;
+    color: white;
+}
+/*Anmeldung*/
+.anmeldung{
+    margin:100px;
+    background: url(../img/member.jpg)  center no-repeat ;
+    background-size: cover;
+    height: 50vh;
+    border-radius: 30%;
+    overflow: hidden;
+}
+/*--------------nav----------------------------------------------------*/
+#nav_small{
+    display: none;
+}
+nav{
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+    position: sticky;
+    top:0;
+    z-index:1000;
+}
+.logo{
+    font-size: 30px;   
+    color: var(--ddc1);
+    padding:0 10px;
+    float:left;
+    background-color: white;
+    border-radius: 50%
+}
+nav ul{
+    list-style: none;
+    width: 70%;
+}
+nav li{
+    display:inline-block;
+    padding: 0 20px;
+}
+nav a{
+    text-decoration: none;
+    color:whitesmoke;
+}
+/*nav li:hover{
+    background-color: var(--dddc1);
+}*/
+nav a:hover{
+    text-decoration: underline;
+}
+.active{
+    background-color: var(--dddc1);
+}
+.pic_underline{
+    font-size: 0.8em;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom:20px;
+    text-align: left;
+    font-weight: 700;
+}
+footer{
+    margin-top:20px;
+    padding: 20px;
+    height: 80px;
+}
+.imglist{
+    width: 200px;
+    height: 300px;
+    border-radius: 50%;
+
+}
+
+/*--- Achtung: Wurde nicht im Tutorial besprochen!!! ----------------------------*/
+/*--- sichtbar/unsichtbar wenn die Seitenbreite kleiner bzw. 800px beträgt! -----*/
+@media (max-width: 800px){
+    header{
+        display: none;
+    }
+    .container{
+        width: 100%;
+    }
+    footer{
+        display: none;
+    }
+
+    aside{
+        display: none;
+    }
+    main.f70, main.f50{
+        width: 100%;
+    }
+    .social{
+
+        display: none;
+
+    }
+    .logo{
+        display: none;
+    }
+    #nav_small{
+        display: block;
+        height: 120px;
+        width: 100%;
+      
+    }
+    #nav_small li{
+        display: block;
+        text-align: center;
+    }
+    #nav_small ul{
+        padding: 0;
+        width: 100%;
+    }
+
+    #nav_desk{
+        display: none;
+        
+    }
+    .ul_uns{
+        padding: 0;
+    }
+}

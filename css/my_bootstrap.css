@@ -1,0 +1,267 @@
+/*-----------Variablen--------------------------*/
+:root{
+    --gray:rgb(214, 214, 214);
+    --dgray: rgb(146, 145, 145);
+    --ddgray:rgb(39, 39, 39);
+  
+    --c1:rgb(149, 165, 255);
+    --dc1: rgb(72, 84, 255);
+    --ddc1: rgb(7, 23, 255);
+    --dddc1: rgb(3, 13, 143);
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+  a{
+      text-decoration: none;
+      color:inherit;
+  }
+/*--------verschiedene Tag's--------------------*/ 
+p{
+    line-height: 1.3em;
+    padding:10px 20px;
+}
+h2, h4{
+    margin-top:10px;
+    margin-bottom: 5px;
+    padding: 10px 20px;
+}
+img{
+    width: 100%;
+    object-fit: cover;
+}
+/*-------------------article--------------------------*/
+article{
+    font-size: 1.3em;
+    margin: 20px;
+    padding: 0;
+    background-color: white;
+    overflow: hidden;
+}
+article h4{
+    padding:10px;
+}
+.news_ticker_article{
+    margin: 0 0 20px 0;
+    color: var(--ddc1)
+}
+.news_ticker_article img{
+    border-bottom: 1px solid var(--ddc1);
+}
+article .button{
+    font-size: 0.8em;
+}
+/*------Listen-----------------------------------*/
+ul{
+    margin:0;
+    list-style: none;
+}
+/*-------Input-----------------------------------*/
+label{
+    display: block;
+}
+input[type="text"], input[type="password"], input[type="number"]{
+    width: 100%;
+    line-height: 25px;
+    font-size: 16px;
+    border: 1px solid var(--ddc1);
+}
+
+
+select { /*remove Standard-Style*/
+    border:none;
+    border-radius: 0;
+    font-size: 1em;
+    width: 100%
+  } 
+  .select_arrow{
+      position: relative;
+  }
+  .select_arrow i{
+    position: absolute;
+    right: 6px;
+    font-size: 2em;
+    color:var(--ddc1);
+}
+select, option {
+    border: 1px solid var(--ddc1);
+    height: 30px;
+    padding: 0 10px;
+  }
+/*-------Form------------------------------------*/
+form{
+    padding: 10px;
+    margin:25px 0;
+}
+.form-group{
+    padding: 10px;
+    margin: 20px 0px;
+}
+/*------Table------------------------------------*/
+table{
+    width: 100%;
+    margin:10px auto;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px solid var(--gray);
+    padding: 8px;
+}
+td{
+    background-color: white;
+}
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+  }
+  
+ /*------Container-------------------------------*/
+  .container{
+    width: 80%;
+   margin:auto;
+}
+/*---button--------------------------------------*/
+.button{
+     padding: 3px 10px;
+     margin: 10px;
+     text-decoration: none;
+}
+.button:hover{
+  background-color: var(--dgray);
+  color: white;
+  text-decoration: underline;
+}
+.button:active{
+    background-color: var(--ddgray);  
+    color: white;
+    font-weight: bolder;
+}
+/*----float--------------------------------------*/
+.float_left{
+    float: left;
+}
+.float_right{
+    float: right; 
+}
+.float_clear{
+    clear: both;
+}
+/*-----text-align---------------------------------*/
+.algn_left{
+    text-align: left;
+}
+.algn_center{
+    text-align: center;
+}
+.algn_right{
+    text-align: right;
+}
+.algn_justify{
+    text-align: justify;
+}
+/*------------Display-----------------------------*/
+.block{
+    display: block;
+}
+.inline-block{
+    display: inline-block;
+    }
+.inline{
+    display: inline;
+}
+/* ----padding------------------------------------*/
+.p0{
+    padding:0;
+}
+.pb0{
+    padding-bottom: 0;
+}
+.p10{
+    padding:10px
+}
+.p20{
+    padding:20px
+}
+.p30{
+    padding:30px
+}
+/* ----margin------------------------------------*/
+.m0{
+    margin:0px
+}
+.m10{
+    margin:10px
+}
+.m20{
+    margin:20px
+}
+.m30{
+    margin:30px
+}
+/*--------width------------------------------------*/
+.f30{
+    width: 30%;
+    box-sizing: border-box;
+}
+.f33{
+    width: 33.33%;
+    box-sizing: border-box;
+}
+.f50{
+    width: 50%;
+    box-sizing: border-box;
+}
+.f70{
+    width: 70%;
+    box-sizing: border-box;
+}
+.f100{
+    width: 100%;
+    box-sizing: border-box;
+}
+.w100{
+    width: 100%;
+}
+.w30{
+    width: 30%;
+}
+.w50{
+    width: 50%;
+}
+.w70{
+    width: 70%;
+}
+/*-------------boxen für Input, Text, Button etc----*/
+.box_grey{
+    background-color: var(--gray);
+    border: var(--dgray) solid 2px;
+    color: var(--ddgray);
+    overflow: hidden;
+}
+.box_light_blue{
+    background-color: var(--c1);
+    border: var(--ddc1) solid 2px;
+    color: var(--ddc1);
+    overflow: hidden;
+}
+.box_dark_blue{
+    background-color: var(--ddc1);
+    border: var(--dc1) solid 2px;
+    color: white;
+    overflow: hidden;
+}
+.box_radius{
+    border-radius: 15px;
+}
+/*-------------shadow---------------------------------*/
+.shadow{
+    box-shadow:  4px 4px 20px rgba(39, 39, 39,0.5);
+}
+/*------------text-color----------------------------------*/
+.cwhite{
+    color: white;
+}

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mein Football</title>
+    <link href="fontawesome/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/my_bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="social box_dark_blue">
+        <div class="noTextOpacity">
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook-f"></i><span>Facebook</span>
+            </a>
+            <a href="https://twitter.com/?lang=de" target="_blank">
+                <i class="fab fa-twitter"></i><span>Twitter</span>
+            </a>
+            <a href="https://www.instagram.com/?hl=de" target="_blank">
+                <i class="fab fa-instagram"></i><span>Instagram</span>
+            </a>
+            <span class="sPic">social's</span>
+        </div>
+    </div>
+    <header>
+        <div>Mein Football!</div>
+    </header>
+    <nav class="box_dark_blue shadow" id="nav_desk">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-football-ball"></i>
+            </div>
+            <ul class="float_right algn_center">
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="anmelden.html">Anmelden</a></li>
+                <li><a href="uns.html">Über Uns</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="box_dark_blue shadow" id="nav_small">
+        <ul class="algn_left">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="anmelden.html">Anmelden</a></li>
+            <li><a href="uns.html">Über Uns</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <!-- Content Start -->
+        <main class="float_left f50">
+            <form class="box_grey" method="GET">
+                <h1>Anmeldung:</h1>
+                <div class="form-group box_dark_blue p10">
+                    <div class="box_grey"><b>Stadt</b></div>
+                    <div class="select_arrow">
+                        <i class="fas fa-angle-down"></i>
+                        <select name="city">
+                            <option value="_">Auswahl</option>
+                            <option value="Berlin">Berlin</option>
+                            <option value="München">München</option>
+                            <option value="Kassel">Kassel</option>
+                            <option value="Münser">Münster</option>
+                            <option value="Dresden">Dresden</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group p10 float_left f50">
+                        <div class="box_grey"><b>Bewerben als:</b></div>
+                        <br>
+                        <input type="radio" name="position" value="1">
+                        <label class="inline-block">Trainer</label><br>
+                        <input type="radio" name="position" value="2">
+                        <label class="inline-block">Spieler</label><br>
+                        <input type="radio" name="position" value="3">
+                        <label class="inline-block"> Schiedsrichter</label>
+                    </div>
+                    <div class="form-group p10 float_right f50">
+                        <div class="box_grey"><b>Fähigkeiten:</b></div>
+                        <br>
+                        <input type="checkbox" name="schnell" value="s">
+                        <label class="inline-block">Schnell</label><br>
+                        <input type="checkbox" name="erf" value="e">
+                        <label class="inline-block">Erfahren</label><br>
+                        <input type="checkbox" name="klug" value="k">
+                        <label class="inline-block">Klug</label>
+                    </div>
+                    <div class="float_clear"></div>
+                    <hr>
+                    <div class="form-group p10">
+                        <div class="box_grey"><b>Allgemein:</b></div>
+                        <br>
+                        <label>Name:</label>
+                        <input type="text"><br><br>
+                        <label>Vorname</label>
+                        <input type="text"><br><br>
+                        <label>Strasse/Nr.</label>
+                        <input type="text"><br><br>
+                        <label>PLZ</label>
+                        <input type="number"><br><br>
+                        <label>Ort</label>
+                        <input type="text">
+                    </div>
+
+                </div>
+                <input class="button box_dark_blue" type="submit" value="senden">
+            </form>
+        </main>
+        <aside class="float_right f50">
+            <div class="box_grey anmeldung"></div>
+
+        </aside>
+
+
+
+
+        <!-- Content End   -->
+    </div>
+
+    <div class="float_clear"></div>
+    <footer class="box_dark_blue shadow">
+        <div class="float_left f33">
+            <div>&copy;2019, Berlin</div>
+        </div>
+        <div class="float_left f33">
+            <div>Social Media:</div>
+            <br>
+            <a href="https://www.facebook.com" target="_blank">
+                <i class="fab fa-facebook-f"></i><span>&nbsp;Facebook&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            </a>
+            <a href="https://twitter.com/?lang=de" target="_blank">
+                <i class="fab fa-twitter"></i><span>&nbsp;Twitter&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            </a>
+            <a href="https://www.instagram.com/?hl=de" target="_blank">
+                <i class="fab fa-instagram"></i><span>&nbsp;Instagram&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            </a>
+        </div>
+        <div class="float_left f33">
+            <ul class="algn_left">
+                <li>info@footballFanblock.de</li>
+                <li>Musterstrass 15 </li>
+                <li>10409 Berlin</li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
